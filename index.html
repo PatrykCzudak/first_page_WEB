@@ -1,0 +1,59 @@
+<!-- HTML !-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My favorite movies to watch </h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h2><i class="fa-solid fa-list"></i> Titles</h2>
+                    <ul id="movie-list">
+                        <li>
+                            <input type='checkbox'> Film, 2025, Noone 
+                        </li>
+                    </ul>
+                    <button onclick="deleteSelected()"  class="button-49 button-color-red" role="button"><i class="fa-solid fa-trash"></i>Delete selected</button>        
+                </div>
+                <div class="column">
+                    <div class="add-movie">
+                        <h3>Add movie</h3>
+                        <label>
+                            <p class="text-style"><i class="fa-solid fa-video"></i> Title:</p> 
+                            <input type="text" placeholder="Your Film" id="title-input" class="input-field">
+                        </label><br>
+                        <label>
+                            <p class="text-style">Year:</p> 
+                            <input type="number" placeholder="1994" id="date-input" class="input-field">
+                        </label><br>
+                            <p class="text-style">Actors:</p>
+                            <input type="text" placeholder="Enter actors" id="actors-input" class="input-field">
+                        </label><br>
+                        <button onclick="addMovie()" class="button-49 button-color-green" role="button"> <i class="fa-solid fa-file-circle-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <hr>
+            &copy; My Movie Database. All Rights reserved
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
